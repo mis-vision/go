@@ -1,0 +1,37 @@
+name: Build and deploy vangen
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.402
+
+    - name: Install go
+      uses: actions/setup-go@v2
+      with:
+        go-version: '1.17.6'
+
+    - name: Install vangen
+      run: go get 4d63.com/vangen
+
+    - uses: webfactory/ssh-agent@v0.5.4
+      with:
+        ssh-private-key: ${{ secrets.MIS_VISION_DEPLOY_KEY }}
+
+    - name: Build
+      run: |
+        ./build.sh ci

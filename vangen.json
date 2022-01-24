@@ -1,0 +1,25 @@
+{
+    "domain": "go.mis.vision",
+    "repositories": [
+      {
+        "prefix": "mis-cr",
+        "type": "git",
+        "url": "ssh://git@ssh.dev.azure.com/v3/NovantaMIS/NDS-MIS/platform-commandrunner"
+      },
+      {
+        "prefix": "mis-utils",
+        "type": "git",
+        "url": "ssh://git@ssh.dev.azure.com/v3/NovantaMIS/NDS-MIS/platform-gotools"
+      },
+      {
+        "prefix": "mis-video-pipeline",
+        "type": "git",
+        "url": "ssh://git@ssh.dev.azure.com/v3/NovantaMIS/NDS-MIS/platform-video-pipeline"
+      },
+      {
+        "prefix": "mis-orchestration",
+        "type": "git",
+        "url": "ssh://git@ssh.dev.azure.com/v3/NovantaMIS/NDS-MIS/platform-orchestration"
+      }
+    ]
+  }
