@@ -7,6 +7,11 @@
         "url": "ssh://git@ssh.dev.azure.com/v3/NovantaMIS/NDS-MIS/platform-commandrunner"
       },
       {
+        "prefix": "mis-infra",
+        "type": "git",
+        "url": "ssh://git@ssh.dev.azure.com/v3/NovantaMIS/NDS-MIS/platform-infra-access"
+      },
+      {
         "prefix": "mis-utils",
         "type": "git",
         "url": "ssh://git@ssh.dev.azure.com/v3/NovantaMIS/NDS-MIS/platform-gotools"
