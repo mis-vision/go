@@ -25,6 +25,11 @@
         "prefix": "mis-orchestration",
         "type": "git",
         "url": "ssh://git@ssh.dev.azure.com/v3/NovantaMIS/NDS-MIS/platform-orchestration"
+      },
+      {
+        "prefix": "mis-log",
+        "type": "git",
+        "url": "ssh://git@ssh.dev.azure.com/v3/NovantaMIS/NDS-MIS/platform-logging"
       }
     ]
   }
