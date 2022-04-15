@@ -34,7 +34,7 @@
       {
         "prefix": "mis-contracts",
         "type": "git",
-        "url": "ssh://git@ssh.dev.azure.com:v3/NovantaMIS/NDS-MIS/platform-contracts"
+        "url": "ssh://git@ssh.dev.azure.com/v3/NovantaMIS/NDS-MIS/platform-contracts"
       }
     ]
   }
